@@ -18,7 +18,7 @@ int main(int argc, char**argv)
 		return -1;
 	}
 
-	cv::Mat img = cv::imread(argv[2],0);
+	cv::Mat img = cv::imread(argv[2],1); // >0 RGB, <0 AS IS, 0 GREY
 	if(img.rows == 0)
 	{
 		printf("Cannot open %s\n",argv[2]);
