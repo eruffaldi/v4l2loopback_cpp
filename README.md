@@ -27,6 +27,15 @@ gstreamer: gst-launch-1.0 videotestsrc ! v4l2sink device=/dev/video0
 ```
 # Test Play
 
-* Listing of device: v4l2-ctl --list-devices
-* ffmpeg: ffmpeg -f v4l2 -list_formats all -i /dev/video0
-* xawtv:  xawtv -c /dev/video0
+* Listing of device: 
+```
+v4l2-ctl --list-devices
+```
+* ffmpeg
+```
+ffmpeg -f v4l2 -list_formats all -i /dev/video0
+```
+*
+```
+xawtv:  xawtv -c /dev/video0
+```
