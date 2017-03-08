@@ -9,6 +9,7 @@ https://github.com/umlaeute/v4l2loopback/blob/master/examples/test.c
 
 # Installation
 
+``` 
  sudo apt-get install v4l2loopback-dkms
  sudo apt-get install v4l2loopback-utils
 
@@ -17,11 +18,13 @@ https://github.com/umlaeute/v4l2loopback/blob/master/examples/test.c
 
  v4l2-ctl -d /dev/video0 -l
  v4l2loopback-ctl set-fps 25 /dev/video0
+```
 
 # Test Write
 
- gstreamer: gst-launch-1.0 videotestsrc ! v4l2sink device=/dev/video0
-
+``` 
+gstreamer: gst-launch-1.0 videotestsrc ! v4l2sink device=/dev/video0
+```
 # Test Play
 
 * Listing of device: v4l2-ctl --list-devices
