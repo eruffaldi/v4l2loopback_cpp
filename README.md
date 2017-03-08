@@ -35,7 +35,7 @@ v4l2-ctl --list-devices
 ```
 ffmpeg -f v4l2 -list_formats all -i /dev/video0
 ```
-*
+* xawtv
 ```
 xawtv:  xawtv -c /dev/video0
 ```
